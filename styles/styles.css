@@ -7,9 +7,11 @@
 body{
     background-color: #BFBFBF;
 }
+main{
+    max-width: 1440px;
+    margin: auto;
+}
 .block_offer{
-    width: 1440px;
-    height: 569px;
     background: #FFFFFF;
     margin: 0 auto;
 }
@@ -33,9 +35,8 @@ body{
     width: 100px;
     margin-top: 20px;
 }
-
 .offer_icons{
-    padding: 80px 104px 122px 104px;
+    padding: 80px 105px 120px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -52,19 +53,17 @@ body{
 }
 
 .homes-guests{
-    width: 1440px;
-    height: 828px;
     background: #EAF0F9;
-    margin: 0 auto;
+    height: 830px;
 }
 .offer-hotel{
     position:relative;
     display: flex;
     justify-content: space-between;
-    padding: 104px 104px 121px 104px;
+    margin: 105px 105px 120px;
 }
 .hotel-foto{
-    width: 296px;
+    width: 300px;
     height: 435px;
 }
 .hotel-foto p{
@@ -79,6 +78,6 @@ body{
 }
 .arrow-right{
     position: absolute;
-    padding-top: 128px;
-    right: 79px;
+    top: 128px;
+    right: -20px;
 }
