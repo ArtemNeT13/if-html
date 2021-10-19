@@ -54,13 +54,13 @@ main{
 
 .homes-guests{
     background: #EAF0F9;
-    height: 830px;
 }
 .offer-hotel{
     position:relative;
     display: flex;
     justify-content: space-between;
-    margin: 105px 105px 120px;
+    margin: 105px 105px 0;
+    padding-bottom: 120px;
 }
 .hotel-foto{
     width: 300px;
