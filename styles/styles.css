@@ -58,8 +58,9 @@ body{
     margin: 0 auto;
 }
 .offer-hotel{
+    position:relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 104px 104px 121px 104px;
 }
 .hotel-foto{
@@ -75,5 +76,9 @@ body{
 }
 .hotel-foto span{
     color: #BFBFBF;
-    
+}
+.arrow-right{
+    position: absolute;
+    padding-top: 128px;
+    right: 79px;
 }
