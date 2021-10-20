@@ -7,13 +7,15 @@
 body{
     background-color: #BFBFBF;
 }
+main{
+    max-width: 1440px;
+    margin: auto;
+}
 .block_offer{
-    width: 1440px;
-    height: 569px;
     background: #FFFFFF;
     margin: 0 auto;
 }
-.offer_text {
+.section-title {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top: 120px;
@@ -23,19 +25,18 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.offer_text p{
+.section-title p{
     margin: 0;
 }
-.offer_text hr{
+.section-title hr{
     border: 0;
     height: 4px;
     background: #F5BD41;
     width: 100px;
     margin-top: 20px;
 }
-
 .offer_icons{
-    padding: 80px 104px 122px 104px;
+    padding: 80px 105px 120px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -49,4 +50,34 @@ body{
 .icon p{
     margin: 0;
     padding-top: 48px;
+}
+
+.homes-guests{
+    background: #EAF0F9;
+}
+.offer-hotel{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 105px 105px 0;
+    padding-bottom: 120px;
+}
+.hotel-foto{
+    width: 300px;
+    height: 435px;
+}
+.hotel-foto p{
+    padding-top: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3077C6;
+}
+.hotel-foto span{
+    color: #BFBFBF;
+}
+.arrow-right{
+    position: absolute;
+    top: 128px;
+    right: -20px;
 }
