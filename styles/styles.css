@@ -6,6 +6,8 @@
 }
 body{
     background-color: #BFBFBF;
+    font-family: 'Roboto', sens-serif;
+    font-weight: 400;
 }
 main{
     max-width: 1440px;
@@ -80,4 +82,38 @@ main{
     position: absolute;
     top: 128px;
     right: -20px;
+}
+
+.best-destinations{
+    background-color: #FFFFFF;
+}
+.destinations-button{
+    display: flex;
+    background-color: #F3F3F4;
+    width: 620px;
+    height: 65px;
+    border-radius: 8px;
+    margin: 105px 105px 0;
+}
+.destinations-button p{
+    font-size: 24px;
+}
+.div-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-regions{
+    background-color: #3077C6;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 190px;
+}
+.button-cities{
+    border-radius: 8px;
+    width: 190px;
+}
+.button-places{
+    border-radius: 8px;
+    width: 240px;
 }
