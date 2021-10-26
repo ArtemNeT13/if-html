@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('./fonts.css');
 
 *{
     padding: 0;
@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 body{
+    /*height: 100%;*/
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -14,10 +15,89 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
-main{
+/*.wrapper{*/
+/*    min-height: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.header{
+    height: 100vh;
+    background-image: url(/images/castelmezzano1979546.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.header-content{
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 196px;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-links{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-right: 24px;
+}
+.header-links p{
+    padding-right: 24px;
+}
+
+.header-links hr{
+    position: absolute;
+    width: 50px;
+    bottom: -12px;
+    left: 5px;
+}
+.header-img{
+    display: flex;
+    align-items: center;
+}
+.header-img img{
+    margin-right: 24px;
+}
+.header-slogan{
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.header-form{
+    margin-bottom: 120px;
+}
+.header-apps{
+    display: flex;
+    justify-content: center;
+}
+.header-apps img{
+    margin-right: 16px;
+}
+
+.main{
+    /*flex: 1 1 auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: 0;
+    height: 4px;
+    background: #F5BD41;
+    width: 100px;
+    margin-top: 20px;
 }
 section{
     width: 100%;
@@ -41,13 +121,7 @@ section{
 .section-title p{
     margin: 0;
 }
-.section-title hr{
-    border: 0;
-    height: 4px;
-    background: #F5BD41;
-    width: 100px;
-    margin-top: 20px;
-}
+
 .offer_icons{
     width: 1240px;
     padding: 80px 0 120px;
@@ -99,7 +173,6 @@ section{
     right: 0;
     transform: translate(50%, -50%);
     text-align: right;
-;
 }
 
 .best-destinations{
@@ -293,7 +366,7 @@ section{
     padding: 0 24px 65px;
 }
 
-footer{
+.footer{
     padding: 100px 0;
     background-color: #10367C;
     width: 100%;
