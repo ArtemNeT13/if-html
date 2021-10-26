@@ -3,17 +3,30 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: #BFBFBF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.font-bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 main{
-    max-width: 1440px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .block_offer{
     background: #FFFFFF;
-    margin: 0 auto;
 }
 .section-title {
     font-family: 'Roboto', sans-serif;
@@ -36,9 +49,10 @@ main{
     margin-top: 20px;
 }
 .offer_icons{
-    padding: 80px 105px 120px;
+    width: 1240px;
+    padding: 80px 0 120px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .icon{
     width: 296px;
@@ -56,10 +70,10 @@ main{
     background: #EAF0F9;
 }
 .offer-hotel{
-    position:relative;
+    width: 1240px;
     display: flex;
     justify-content: space-between;
-    margin: 105px 105px 0;
+    margin-top: 105px;
     padding-bottom: 120px;
 }
 .hotel-foto{
@@ -76,8 +90,233 @@ main{
 .hotel-foto span{
     color: #BFBFBF;
 }
+.foto-relative{
+    position: relative;
+}
 .arrow-right{
     position: absolute;
-    top: 128px;
-    right: -20px;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    text-align: right;
+;
+}
+
+.best-destinations{
+    background-color: #FFFFFF;
+    display: flex;
+}
+.destination-select{
+    width: 1240px;
+}
+.destinations-button{
+    width: 620px;
+    height: 65px;
+    background-color: #F3F3F4;
+    border-radius: 8px;
+    margin: 105px 0 65px;
+    display: flex;
+}
+.destinations-button button{
+    border-width: 0;
+    border-radius: 8px;
+    font-size: 24px;
+    height: 65px;
+}
+.button-regions{
+    background-color: #3077C6;
+    color: #FFFFFF;
+    width: 190px;
+}
+.button-cities{
+    width: 190px;
+}
+.button-places{
+    width: 240px;
+}
+.destination-foto{
+    width: 1240px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 104px 35px;
+}
+.destination-foto p{
+    padding-top: 24px;
+    color: #3077C6;
+}
+.destination-foto1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/Maldives.jpg);
+    width: 296px;
+    height: 296px;
+    box-shadow: inset 0 0 104px 8px rgba(56, 56, 56, 0.4);
+}
+.destination-foto1 img{
+    position: relative;
+    z-index: -2;
+    opacity: 70%;
+}
+.button-blue{
+    font-size: 18px;
+    width: 128px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    color: #3077C6;
+}
+.arrow-down{
+    text-align: center;
+    margin-bottom: 105px;
+}
+
+
+.sing-up{
+    width: 1240px;
+    height: 200px;
+    background-color: #EAF0F9;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.sing-up-user{
+    padding: 0 24px;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+}
+.sing-up-user p{
+    padding-bottom: 21px;
+    font-weight: 500;
+}
+.sing-up img{
+    top: 24px;
+}
+.sing-up-booking{
+    padding-left: 24px;
+}
+.sing-up-close{
+    padding: 24px;
+}
+
+.guests-reviews{
+    width: 1240px   ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.reviews{
+    margin-top: 104px;
+}
+.reviews-image{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.reviews-price{
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #383838;
+    opacity: .7;
+    position: absolute;
+    bottom: 0;
+}
+.reviews-price p{
+    color: #FFFFFF;
+    opacity: 1;
+}
+.reviews-content{
+    background-color: #EAF0F9;
+    height: 360px;
+}
+.reviews-hotel{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 8px;
+}
+.reviews-hotel p{
+    font-size: 18px;
+    color: #3077C6;
+}
+.reviews-score {
+    width: 48px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #10367C;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.reviews-plase{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 24px;
+}
+.plase-countru{
+    color: #3077C6;
+    font-size: 18px;
+}
+.plase-views{
+    color: #BFBFBF;
+    font-size: 14px;
+}
+
+.reviews-account{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.reviews-account img{
+    padding: 0 16px 0 24px;
+}
+.user-name{
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.user-countru{
+    color: #BFBFBF;
+    font-size: 14px;
+}
+.reviews-text{
+    width: 400px;
+    font-size: 18px;
+    padding: 0 24px 65px;
+}
+
+footer{
+    padding: 100px 0;
+    background-color: #10367C;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer li{
+    list-style-type: none;
+    margin: 24px 0;
+}
+.footer-content{
+    width: 1240px;
+    display: flex;
+}
+.footer-content div{
+    width: 33.33%;
+}
+footer p{
+    width: 1240px;
+    padding-top: 40px;
+    text-align: left;
+    font-size: 14px;
 }
