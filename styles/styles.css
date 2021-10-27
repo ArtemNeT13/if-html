@@ -42,6 +42,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 196px;
+    padding-right: 5px;
 }
 .header-menu{
     display: flex;
@@ -67,20 +68,81 @@ body{
 .header-img{
     display: flex;
     align-items: center;
+    width: 94px;
+    justify-content: space-between;
 }
-.header-img img{
-    margin-right: 24px;
-}
+/*.header-img img{*/
+/*    margin-right: 24px;*/
+/*}*/
 .header-slogan{
     font-size: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 145px;
 }
-.header-form{
+.header-search{
+    background-color: #FFFFFF;
+    border: 3px solid #F3F3F4;
+    border-radius: 8px;
     margin-bottom: 120px;
+    width: 1230px;
+    height: 64px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input input{
+    font-size: 18px;
+    color: #383838;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border-style: solid;
+    width: 468px;
+}
+.input{
+    position: relative;
+}
+.input input{
+    border: none;
+}
+.search-input p{
+    position: absolute;
+    top: -44px;
+    left: 24px;
+}
+.data{
+    width: 260px;
+    margin-top: -3px;
+    border-color: #F5BD41;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    height: 64px;
+    position: relative;
+}
+.data p{
+    position: absolute;
+    top: -44px;
+    left: 24px;
+}
+
+.filter{
+    width: 310px;
+    color: #383838;
+    padding: 22px 24px;
+}
+.header-button button{
+    margin-top: -3px;
+    margin-right: -3px;
+    font-size: 24px;
+    height: 64px;
+    width: 192px;
+    color: #FFFFFF;
+    background-color: #3077C6;
 }
 .header-apps{
     display: flex;
     justify-content: center;
+    margin-bottom: 120px;
 }
 .header-apps img{
     margin-right: 16px;
