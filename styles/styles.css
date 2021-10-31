@@ -441,6 +441,12 @@ section{
     align-items: center;
     flex-direction: column;
 }
+footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
 footer li{
     list-style-type: none;
     margin: 24px 0;
