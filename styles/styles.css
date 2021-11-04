@@ -197,7 +197,7 @@ body, html{
     border: none;
     outline:none;
 }
-#filter-children{
+.filter-children{
     width: 82px;
 }
 .filter-input{
