@@ -10,7 +10,7 @@
 <div class="wrapper">
 <header class="header">
     <div class="header-content">
-        <div class="header-logo">
+        <nav class="header-logo">
             <div>
                 <img src="./images/logo.svg" alt="logo">
             </div>
@@ -25,42 +25,43 @@
                     <img src="./images/AccountHeader.svg" alt="account">
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="header-slogan font-bold">
             <h1>Discover stays<br>
                 to live, work or just relax
             </h1>
         </div>
         <form class="header-search">
-
-
-
             <div class="search-block">
-                <div class="search-input">
-                    <div class="search-label">
-                        <label for="input-box"> Your destination or hotel name</label>
+                    <div class="label-block">
+                        <label>Your destination or hotel name</label>
                     </div>
-                    <div class="input">
-                        <input type="text" class="input-box" id="input-box"  name="search-input" value="new york" placeholder="New York">
+                    <div class="input-block">
+                        <input type="text" name="search-input" placeholder="New York">
                     </div>
-                </div>
             </div>
-
-
-
             <div class="search-data">
-                <div class="data">
-                    <div>Tue 15 Sept</div>
+                <div class="data-label">
+                    <label>Check-in — Check-out</label>
+                </div>
+                <div class="data-block">
+                    <input type="text" name="data-in" placeholder="Tue 15 Sept" >
                     <span>&nbsp—&nbsp</span>
-                    <div>Sat 19 Sept</div>
-                    <p>Check-in — Check-out</p>
+                    <input type="text" name="data-out" placeholder="Sat 19 Sept" >
                 </div>
             </div>
-
-            <div class="header-filter">
-                <div class="filter"><p>2 Adults — 0 Children — 1 Room</p></div>
+            <div class="filter-block">
+                <div class="filter-label">
+                    <label>2 Adults — 0 Children — 1 Room</label>
+                </div>
+                <div class="filter-input">
+                    <input type="text" name="filter-abults" placeholder="2 Adults">
+                    <span>&nbsp—&nbsp</span>
+                    <input type="text" name="filter-children" id="filter-children" placeholder="0 Children">
+                    <span>&nbsp—&nbsp</span>
+                    <input type="text" name="filter-room" placeholder="1 Room">
+                </div>
             </div>
-
             <div class="header-button">
                 <button class="button-blue">Search</button>
             </div>
