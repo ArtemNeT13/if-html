@@ -279,9 +279,12 @@ section{
 
 .homes-guests{
     background: #EAF0F9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .offer-hotel{
-    width: 1240px;
     display: flex;
     justify-content: space-between;
     margin-top: 105px;
@@ -311,14 +314,10 @@ section{
     transform: translate(50%, -50%);
     text-align: right;
 }
-
 .best-destinations{
-    background-color: #FFFFFF;
-    display: flex;
+    max-width: 1240px;
 }
-.destination-select{
-    width: 1240px;
-}
+
 .destinations-button{
     width: 620px;
     height: 65px;
@@ -345,10 +344,8 @@ section{
     width: 240px;
 }
 .destination-foto{
-    width: 1240px;
     display: flex;
-    justify-content: space-around;
-    margin: 0 104px 35px;
+    margin-bottom: 35px;
 }
 .destination-foto p{
     padding-top: 24px;
@@ -383,15 +380,10 @@ section{
     margin-bottom: 105px;
 }
 
-
 .sing-up{
-    width: 1240px;
-    height: 200px;
     background-color: #EAF0F9;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start;
 }
 .sing-up-user{
     padding: 0 24px;
@@ -415,10 +407,13 @@ section{
     padding: 24px;
 }
 
-.guests-reviews{
-    width: 1240px   ;
+.guests{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.guests-reviews{
+    display: flex;
     margin-bottom: 120px;
 }
 .reviews{
