@@ -15,6 +15,11 @@ h1{
     font-size: 50px;
     margin-bottom: 145px;
 }
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
 :root {
  --column-count: 12;
 }
@@ -62,16 +67,44 @@ h1{
     flex-direction: row;
     margin-right: 24px;
 }
-.header-links p{
+.header-links p {
     padding-right: 24px;
 }
 
-.header-links hr{
-    position: absolute;
-    width: 50px;
-    bottom: -12px;
-    left: 5px;
+
+
+
+@keyframes underline-stays-animation{
+    0% {width: 0px;}
+    100% {width: 50px;}
 }
+.underline-stays:hover::before{
+    content: "";
+    padding-bottom: 38px;
+    left: 5px;
+    position: absolute;
+    border-bottom: 4px solid #F5BD41;
+    animation-name: underline-stays-animation;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+@keyframes underline-attractions-animation{
+    0% {width: 0px;}
+    100% {width: 112px;}
+}
+.underline-attractions:hover::before{
+    content: "";
+    padding-bottom: 36px;
+    left: 86px;
+    position: absolute;
+    border-bottom: 4px solid #F5BD41;
+    animation-name: underline-attractions-animation;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+
 .header-img{
     display: flex;
     align-items: center;
@@ -235,14 +268,6 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-hr{
-    border: 0;
-    height: 4px;
-    background: #F5BD41;
-    width: 100px;
-    margin-top: 20px;
-    align-items: center;
-}
 
 section{
     width: 100%;
@@ -261,6 +286,13 @@ section{
     flex-direction: column;
     align-items: center;
 }
+.section-title-underline::after{
+    content: "";
+    width: 100px;
+    margin-top: 20px;
+    border-bottom: 4px solid #F5BD41;
+}
+
 .offer_icons{
     padding: 80px 0 120px;
     display: flex;
@@ -289,6 +321,15 @@ section{
     justify-content: space-between;
     margin-top: 105px;
     padding-bottom: 120px;
+    position: relative;
+}
+.arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    text-align: right;
+    height: 300px;
 }
 .hotel-foto{
     width: 300px;
@@ -304,16 +345,8 @@ section{
 .hotel-foto span{
     color: #BFBFBF;
 }
-.foto-relative{
-    position: relative;
-}
-.arrow-right{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-    text-align: right;
-}
+
+
 .best-destinations{
     max-width: 1240px;
 }
@@ -500,15 +533,14 @@ section{
 
 footer{
     width: 100%;
-    padding: 100px 0;
     background-color: #10367C;
     color: #FFFFFF;
     font-size: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 .footer{
+    padding: 120px 0;
     max-width: 1240px;
 }
 .footer-logo{
@@ -550,37 +582,41 @@ footer p{
 
 
 @media screen and (max-width: 640px) {
-    .col-s-1  {width: calc(100% / var(--column-count) * 1); border-color: #ea9292}
-    .col-s-2  {width: calc(100% / var(--column-count) * 2); border-color: #ea9292}
-    .col-s-3  {width: calc(100% / var(--column-count) * 3); border-color: #ea9292}
-    .col-s-4  {width: calc(100% / var(--column-count) * 4); border-color: #ea9292}
-    .col-s-5  {width: calc(100% / var(--column-count) * 5); border-color: #ea9292}
-    .col-s-6  {width: calc(100% / var(--column-count) * 6); border-color: #ea9292}
-    .col-s-7  {width: calc(100% / var(--column-count) * 7); border-color: #ea9292}
-    .col-s-8  {width: calc(100% / var(--column-count) * 8); border-color: #ea9292}
-    .col-s-9  {width: calc(100% / var(--column-count) * 9); border-color: #ea9292}
-    .col-s-10 {width: calc(100% / var(--column-count) * 10); border-color: #ea9292}
-    .col-s-11 {width: calc(100% / var(--column-count) * 11); border-color: #ea9292}
-    .col-s-12 {width: calc(100% / var(--column-count) * 12); border-color: #ea9292}
+    .col-sm-1  {width: calc(100% / var(--column-count) * 1);}
+    .col-sm-2  {width: calc(100% / var(--column-count) * 2);}
+    .col-sm-3  {width: calc(100% / var(--column-count) * 3);}
+    .col-sm-4  {width: calc(100% / var(--column-count) * 4);}
+    .col-sm-5  {width: calc(100% / var(--column-count) * 5);}
+    .col-sm-6  {width: calc(100% / var(--column-count) * 6);}
+    .col-sm-7  {width: calc(100% / var(--column-count) * 7);}
+    .col-sm-8  {width: calc(100% / var(--column-count) * 8);}
+    .col-sm-9  {width: calc(100% / var(--column-count) * 9);}
+    .col-sm-10 {width: calc(100% / var(--column-count) * 10);}
+    .col-sm-11 {width: calc(100% / var(--column-count) * 11);}
+    .col-sm-12 {width: calc(100% / var(--column-count) * 12);}
 
-    .section-title hr{
-        display: none;
+/*.wrapper{*/
+/*    min-width: 360px;*/
+/*}*/
+    .section-title-underline::after{
+        width: 0px;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 500;
     }
     .section-title{
         padding-top: 24px;
-        padding-bottom: 32px;
-        font-size: 28px;
-        font-weight: 500;
+        padding-bottom: 8px;
     }
     .offer_icons{
         padding-top: 0;
         padding-bottom: 8px;
-        flex-direction: column;
-        align-items: center;
-        width: 640px;
+        display: unset;
     }
     .icon{
         padding-bottom: 26px;
+        margin: 0;
     }
     .icon img{
         width: 70px;
@@ -590,11 +626,52 @@ footer p{
         font-size: 0.6em;
     }
 
+    .offer-hotel{
+        margin-top: 24px;
+        padding-bottom: 40px;
+    }
+    .hotel-foto{
+        width: 156px;
+        height: 209px;
+        margin:0 8px;
+    }
+    .hotel-foto img{
+        width: 156px;
+
+    }
+    .foto-off{
+        display: none;
+    }
+    .hotel-foto p{
+        padding-top: 8px;
+        font-size: 12px;
+    }
+    .hotel-foto span{
+        font-size: 12px;
+    }
+    .arrow-right{
+        top: 50%;
+        right: 12px;
+        transform: translate(50%, -50%);
+        text-align: right;
+        height: 124px;
+    }
+    .arrow-right img{
+      width: 28px;
+    }
+
+
+
+
+
+
     .footer{
         padding: 0;
+        max-width: 640px;
     }
     .footer-logo{
-        display: unset;
+        text-align: center;
+        display: block;
         padding: 40px 0 31px;
     }
     .footer-content a{
@@ -609,6 +686,7 @@ footer p{
         display: none;
     }
     .footer-content{
+        margin-bottom: 32px;
         padding: 0;
         width: 100%;
         justify-content: center;
@@ -616,13 +694,12 @@ footer p{
     .footer-content div{
         width: auto;
     }
-    footer p{
+    footer p {
+        text-align: center;
         width: auto;
         font-size: 12px;
-        padding-top: 31px;
         padding-bottom: 40px;
     }
-
 
 }
 
