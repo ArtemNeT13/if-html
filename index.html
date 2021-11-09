@@ -10,28 +10,36 @@
 <div class="wrapper">
 <header class="header">
     <div class="header-content">
-        <nav class="header-logo">
+        <nav class="header-logo col-xl-12">
             <div>
                 <img src="./images/logo.svg" alt="logo">
             </div>
             <div class="header-menu">
+
+
                 <div class="header-links">
-                    <p>Stays</p>
-                    <p>Attractions</p>
-                    <hr>
+                    <div class="underline-stays">
+                        <p>Stays</p>
+                    </div>
+                    <div class="underline-attractions">
+                        <p>Attractions</p>
+                    </div>
+
                 </div>
+
+
                 <div class="header-img">
                     <img src="./images/Night.svg" alt="night">
                     <img src="./images/AccountHeader.svg" alt="account">
                 </div>
             </div>
         </nav>
-        <div class="header-slogan font-bold">
+        <div class="font-bold col-xl-12">
             <h1>Discover stays<br>
                 to live, work or just relax
             </h1>
         </div>
-        <form class="header-search">
+        <form class="header-search col-xl-12">
             <div class="search-block">
                     <div class="label-block">
                         <label>Your destination or hotel name</label>
@@ -66,102 +74,104 @@
                 <button class="button-blue">Search</button>
             </div>
         </form>
-        <div class="header-apps">
+        <div class="header-apps col-xl-12">
             <img src="./images/google-play-badge.png" alt="google play badge">
             <img src="./images/App_Store_Badge.png" alt="app store badge">
         </div>
     </div>
 </header>
+
 <main class="main">
-    <section class="block_offer">
-        <div class="section-title">
-            <p>What do we offer</p>
-           <div><hr></div>
+    <section class="section-content">
+        <div class="section-title section-title-underline col-xl-12">
+            <h2>What do we offer</h2>
+
         </div>
-        <div class="offer_icons">
-            <div class="icon">
+        <div class="offer_icons col-xl-12">
+            <div class="icon col-xl-3 col-sm-12">
                 <img src="./images/headsetMic.svg" alt="Support 24/7">
                 <p>Support 24/7</p>
             </div>
-            <div class="icon">
+            <div class="icon col-xl-3 col-sm-12">
                 <img src="./images/communicate.svg" alt="Communicate directly">
                 <p>Communicate directly</p>
             </div>
-            <div class="icon">
+            <div class="icon col-xl-3 col-sm-12">
                 <img src="./images/notebook.svg" alt="Book online">
                 <p>Book online</p>
             </div>
-            <div class="icon">
+            <div class="icon col-xl-3 col-sm-12">
                 <img src="./images/reviews.svg" alt="Real guest reviews">
                 <p>Real guest reviews</p>
             </div>
         </div>
     </section>
     <section class="homes-guests">
-        <div class="section-title">
-            <p>Homes guests loves</p>
+        <div class="section-title col-xl-12 col-sm-12">
+            <h2>Homes guests loves</h2>
         </div>
-        <div class="offer-hotel">
-            <div class="hotel-foto">
-                <img src="./images/hotelLeopoid.jpg" alt="Hotel Leopold">
+        <div class="offer-hotel section-content col-xl-12">
+            <div class="arrow-right">
+                <img src="images/arrowRight.png" alt="right arrow">
+            </div>
+            <div class="hotel-foto foto-on col-sm-6">
+                <img srcset="./images/hotelLeopoid.jpg"
+                     alt="Hotel Leopold">
                 <p>Hotel Leopold</p>
                 <p><span>Saint Petersburg, Russia</span></p>
             </div>
-            <div class="hotel-foto">
+            <div class="hotel-foto foto-on col-sm-6">
                 <img src="./images/apartmentSunshine.jpg" alt="Apartment Sunshine">
                 <p>Apartment Sunshine</p>
                 <p><span>Santa  Cruz de Tenerife, Spain</span></p>
             </div>
-            <div class="hotel-foto">
+            <div class="hotel-foto foto-off">
                 <img src="./images/villaKunerad.jpg" alt="Villa Kunerad">
                 <p>Villa Kunerad</p>
                 <p><span>Vysokie Tatry, Slowakia</span></p>
             </div>
-            <div class="hotel-foto">
-                <div class="foto-relative">
-                    <img src="./images/hostelFriendship.jpg" alt="Hostel Friendship">
-                    <div class="arrow-right">
-                        <img src="images/arrowRight.png" alt="right arrow">
-                    </div>
-                </div>
+            <div class="hotel-foto foto-off">
+                <img src="./images/hostelFriendship.jpg" alt="Hostel Friendship">
                 <p>Hostel Friendship</p>
                 <p><span>Berlin, Germany</span></p>
             </div>
         </div>
     </section>
     <section class="best-destinations">
-        <div class="section-title">
-            <p>The best destinations</p>
+        <div class="section-title col-xl-12">
+            <h2>The best destinations</h2>
         </div>
-        <div class="destination-select">
-            <div class="destinations-button">
-                <button class="button-regions" name="button-regions">Regions</button>
-                <button class="button-cities" name="button-cities">Cities</button>
-                <button class="button-places" name="button-places">Places of interest</button>
-            </div>
-        </div>
-        <div class="destination-foto">
-            <div>
-                <div class="destination-foto1">
-                    <button name="buttonBoockNow" class="button-blue">Boock now</button>
+        <div class="section-content">
+            <div class="destination-select col-xl-12">
+                <div class="destinations-button">
+                    <button class="button-regions" name="button-regions">Regions</button>
+                    <button class="button-cities" name="button-cities">Cities</button>
+                    <button class="button-places" name="button-places">Places of interest</button>
                 </div>
-                <p>Maldives</p>
             </div>
-            <div><img src="./images/Spain.jpg" alt="foto Spain">
-                <p>Spain</p>
+            <div class="destination-foto col-xl-12">
+                <div class="col-xl-3">
+                    <div class="destination-foto1">
+                        <button name="buttonBoockNow" class="button-blue">Boock now</button>
+                    </div>
+                    <p>Maldives</p>
+                </div>
+                <div class="col-xl-3"><img src="./images/Spain.jpg" alt="foto Spain">
+                    <p>Spain</p>
+                </div>
+                <div class="col-xl-3"><img src="./images/Norway.jpg" alt="foto Norway">
+                    <p>Norway</p>
+                </div>
+                <div class="col-xl-3"><img src="./images/Island.jpg" alt="foto Island">
+                    <p>Island</p>
+                </div>
             </div>
-            <div><img src="./images/Norway.jpg" alt="foto Norway">
-                <p>Norway</p>
+            <div class="arrow-down">
+                <img src="images/arrowDown.png" alt="down arrow">
             </div>
-            <div><img src="./images/Island.jpg" alt="foto Island">
-                <p>Island</p>
-            </div>
-        </div>
-        <div class="arrow-down">
-            <img src="images/arrowDown.png" alt="down arrow">
         </div>
     </section>
-    <section class="sing-up">
+    <section class="sing-up section-content">
         <div class="sing-up-user">
             <div>
                 <img src="./images/user.png" alt="user">
@@ -175,12 +185,12 @@
             <img src="./images/close1.png" alt="close">
         </div>
     </section>
-    <section>
-        <div class="section-title">
-            <p>Guests reviews</p>
+    <section class="guests">
+        <div class="section-title col-xl-12">
+            <h2>Guests reviews</h2>
         </div>
-        <div class="guests-reviews">
-            <div class="reviews">
+        <div class="guests-reviews section-content col-xl-12">
+            <div class="reviews col-xl-4">
                 <div class="reviews-image">
                     <img src="./images/BaliIndonesia.jpg" alt="Bali Indonesia">
                     <div class="reviews-price"><p>From 250 USD</p></div>
@@ -215,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="reviews">
+            <div class="reviews col-xl-4">
                 <div class="reviews-image">
                     <img src="./images/RotterdamNetherlands.jpg" alt="Rotterdam, Netherlands">
                     <div class="reviews-price"><p>From 40 USD</p></div>
@@ -248,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="reviews">
+            <div class="reviews col-xl-4">
                 <div class="reviews-image">
                     <img src="./images/OurikaMarocco.jpg" alt="Ourika Marocco">
                     <div class="reviews-price"><p>From 100 USD</p></div>
@@ -288,41 +298,44 @@
         </div>
     </section>
 </main>
-<footer class="footer">
-    <div class="footer-logo">
-        <img src="./images/footer-logo.svg" alt="logo">
-    </div>
-    <div class="footer-content">
-        <div>
-            <span class="font-bold"><a href="./">About</a></span>
-            <ul>
-                <li><a href="./">How Triphouse works</a></li>
-                <li><a href="./">Careers</a></li>
-                <li><a href="./">Privacy</a></li>
-                <li><a href="./">Terms</a></li>
-            </ul>
+
+<footer>
+    <div class="footer col-xl-12 col-sm-12">
+        <div class="footer-logo col-sm-12">
+            <img src="./images/footer-logo.svg" alt="logo">
         </div>
-        <div>
-            <span class="font-bold"><a href="./">Property types</a></span>
-            <ul>
-                <li><a href="./">Guest houses</a></li>
-                <li><a href="./">Hotels</a></li>
-                <li><a href="./">Apartments</a></li>
-                <li><a href="./">Villas</a></li>
-                <li><a href="./">Holiday homes</a></li>
-                <li><a href="./">Hostels</a></li>
-            </ul>
+        <div class="footer-content col-xl-12">
+            <div class="col-xl-4">
+                <span class="font-bold"><a href="./">About</a></span>
+                <ul>
+                    <li><a href="./">How Triphouse works</a></li>
+                    <li><a href="./">Careers</a></li>
+                    <li><a href="./">Privacy</a></li>
+                    <li><a href="./">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-4">
+                <span class="font-bold"><a href="./">Property types</a></span>
+                <ul>
+                    <li><a href="./">Guest houses</a></li>
+                    <li><a href="./">Hotels</a></li>
+                    <li><a href="./">Apartments</a></li>
+                    <li><a href="./">Villas</a></li>
+                    <li><a href="./">Holiday homes</a></li>
+                    <li><a href="./">Hostels</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-4">
+                <span class="font-bold"><a href="./">Support</a></span>
+                <ul>
+                    <li><a href="./">Contact Customer Service</a></li>
+                    <li><a href="./">FAQ</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <span class="font-bold"><a href="./">Support</a></span>
-            <ul>
-                <li><a href="./">Contact Customer Service</a></li>
-                <li><a href="./">FAQ</a></li>
-            </ul>
+        <div class="col-xl-12 col-sm-12">
+            <p>© 2020 Triphouse, Inc. All rights reserved</p>
         </div>
-    </div>
-    <div>
-        <p>© 2020 Triphouse, Inc. All rights reserved</p>
     </div>
 </footer>
 </div>
