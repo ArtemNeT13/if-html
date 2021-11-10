@@ -27,6 +27,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
+
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -292,7 +293,12 @@ section{
     margin-top: 20px;
     border-bottom: 4px solid #F5BD41;
 }
-
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+}
 .offer_icons{
     padding: 80px 0 120px;
     display: flex;
@@ -314,7 +320,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    order: 2;
 }
 .offer-hotel{
     display: flex;
@@ -349,6 +355,8 @@ section{
 
 .best-destinations{
     max-width: 1240px;
+    order: 3;
+    margin-bottom: 200px;
 }
 
 .destinations-button{
@@ -365,6 +373,9 @@ section{
     font-size: 24px;
     height: 65px;
 }
+.button-places span{
+   display: none;
+}
 .button-regions{
     background-color: #3077C6;
     color: #FFFFFF;
@@ -378,7 +389,10 @@ section{
 }
 .destination-foto{
     display: flex;
-    margin-bottom: 35px;
+    position: relative;
+}
+.foto{
+    margin: 0 8px;
 }
 .destination-foto p{
     padding-top: 24px;
@@ -395,9 +409,7 @@ section{
     box-shadow: inset 0 0 104px 8px rgba(56, 56, 56, 0.4);
 }
 .destination-foto1 img{
-    position: relative;
-    z-index: -2;
-    opacity: 70%;
+    display: none;
 }
 .button-blue{
     font-size: 18px;
@@ -409,14 +421,18 @@ section{
     color: #3077C6;
 }
 .arrow-down{
+    position: absolute;
+    min-width: 1240px;
     text-align: center;
-    margin-bottom: 105px;
+    bottom: 0;
+    margin-bottom: -90px;
 }
 
 .sing-up{
     background-color: #EAF0F9;
     display: flex;
     justify-content: space-between;
+    order: 4;
 }
 .sing-up-user{
     padding: 0 24px;
@@ -424,7 +440,10 @@ section{
     height: 200px;
     display: flex;
     align-items: center;
-
+    order: 1;
+}
+.logo-triphouse{
+    display: none;
 }
 .sing-up-user p{
     padding-bottom: 21px;
@@ -435,15 +454,25 @@ section{
 }
 .sing-up-booking{
     padding-left: 24px;
+    display: block;
+}
+.button-blue p{
+    font-size: 18px;
+    height: 50%;
+}
+.sing-up-booking span{
+    display: none;
 }
 .sing-up-close{
     padding: 24px;
+    order: 2;
 }
 
 .guests{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    order: 5;
 }
 .guests-reviews{
     display: flex;
@@ -599,7 +628,7 @@ footer p{
 /*    min-width: 360px;*/
 /*}*/
     .section-title-underline::after{
-        width: 0px;
+        width: 0;
     }
     h2{
         font-size: 28px;
@@ -608,6 +637,9 @@ footer p{
     .section-title{
         padding-top: 24px;
         padding-bottom: 8px;
+    }
+    .section-content {
+        max-width: 360px;
     }
     .offer_icons{
         padding-top: 0;
@@ -642,6 +674,7 @@ footer p{
     .foto-off{
         display: none;
     }
+
     .hotel-foto p{
         padding-top: 8px;
         font-size: 12px;
@@ -661,7 +694,129 @@ footer p{
     }
 
 
+    .best-destinations{
+        max-width: 320px;
+        margin-bottom: 40px;
+    }
+    .destinations-button{
+        width: auto;
+        height: 32px;
+        background-color: #FFFFFF;
+        margin: 32px 0 24px;
+        justify-content: space-between;
+    }
+    .destinations-button button{
+        font-size: 18px;
+        height: 32px;
+        border-radius: 4px;
+    }
+    button .button-cities, .button-places {
+        background-color: #FFFFFF;
+        border: 3px solid red;
+    }
+    .button-cities{
+        margin: 0 16px;
+    }
+    .button-places span{
+        display: unset;
+    }
+    .button-places p{
+           display: none;
+       }
+    .destination-foto img{
+        width: 156px;
+    }
+    .destination-foto1{
+        background-image: none;
+        width: 156px;
+        height: auto;
+        display: unset;
+        box-shadow: none;
+    }
+    .destination-foto1 button{
+        display: none;
+    }
+    .destination-foto1 img{
+        display: unset;
+    }
+    .destination-foto p{
+        font-size: 12px;
+        padding-top: 2px;
+    }
+    .destination-foto{
+        position: relative;
+    }
+    .foto{
+        margin: 0 8px 0 0;
 
+    }
+    .arrow-down img{
+        width: 28px;
+        transform: rotate(-90deg);
+    }
+    .arrow-down{
+        min-width: 320px;
+        height: 28px;
+        position: absolute;
+        text-align: end;
+        margin: 0;
+        top: calc(50% - 28px);
+        right: -12px;
+    }
+
+    .sing-up{
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    .sing-up-user{
+        height: 106px;
+        padding: 0;
+    }
+    .logo-triphouse{
+        display: unset;
+    }
+    .sing-up-booking p{
+        display: none;
+    }
+    .sing-up-booking span{
+        display: unset;
+    }
+    .sing-up-user p {
+        padding-bottom: 0;
+        font-weight: 400;
+    }
+    .sing-up-close{
+        order: 0;
+        padding: 16px;
+    }
+    .sing-up-close img{
+        width: 16px;
+    }
+    .sing-up-booking span{
+        font-size: 12px;
+    }
+    .sing-up-booking{
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+    }
+    .sing-up-booking, .button-blue span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .button-blue{
+        width: auto;
+        background-color: unset;
+        border: 0px solid #3077C6;
+        margin: 16px;
+    }
+
+
+
+    .guests{
+        order: 3;
+        /*display: none;*/
+    }
 
 
 
