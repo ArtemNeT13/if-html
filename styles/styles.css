@@ -354,11 +354,12 @@ section{
 
 
 .best-destinations{
+    background-color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     order: 3;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .destinations-button{
