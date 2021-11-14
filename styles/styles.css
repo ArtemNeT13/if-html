@@ -354,7 +354,9 @@ section{
 
 
 .best-destinations{
-    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     order: 3;
     margin-bottom: 200px;
 }
