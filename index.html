@@ -10,12 +10,11 @@
 <div class="wrapper">
 <header class="header">
     <div class="header-content">
-        <nav class="header-logo col-xl-12">
+        <nav class="header-logo col-xl-12 col-sm-12">
             <div>
                 <img src="./images/logo.svg" alt="logo">
             </div>
             <div class="header-menu">
-
 
                 <div class="header-links">
                     <div class="underline-stays">
@@ -24,56 +23,84 @@
                     <div class="underline-attractions">
                         <p>Attractions</p>
                     </div>
-
                 </div>
-
 
                 <div class="header-img">
-                    <img src="./images/Night.svg" alt="night">
+                    <div class="image-sun">
+                        <img src="./images/Night.svg" alt="night">
+                    </div>
                     <img src="./images/AccountHeader.svg" alt="account">
+                    <div class="humburger-menu">
+                        <div class="humburger"></div>
+                        <div class="humburger"></div>
+                        <div class="humburger"></div>
+                    </div>
                 </div>
             </div>
+
         </nav>
-        <div class="font-bold col-xl-12">
+        <div class="font-bold col-xl-12 col-sm-12">
             <h1>Discover stays<br>
                 to live, work or just relax
             </h1>
         </div>
-        <form class="header-search col-xl-12">
-            <div class="search-block">
-                    <div class="label-block">
-                        <label>Your destination or hotel name</label>
+        <div class="form-search col-sm-12">
+            <form class="header-search col-xl-12 col-sm-12">
+                <div class="search-block col-sm-12">
+                        <div class="label-block">
+                            <img src="./images/Vector.svg" alt="vector">
+                            <label>Your destination or hotel name</label>
+                        </div>
+                        <div class="input-block">
+                            <input type="text" name="search-input" placeholder="New York">
+                        </div>
+                </div>
+                <div class="search-data col-sm-12">
+                    <div class="data-label">
+                        <label>Check-in — Check-out</label>
                     </div>
-                    <div class="input-block">
-                        <input type="text" name="search-input" placeholder="New York">
+
+                    <div class="data-label-2">
+                        <div class="col-sm-6">Check-in data</div>
+                        <div class="col-sm-6">Check-out data</div>
                     </div>
-            </div>
-            <div class="search-data">
-                <div class="data-label">
-                    <label>Check-in — Check-out</label>
+
+                    <div class="data-block col-sm-12">
+                        <input class="col-sm-6" type="text" name="data-in" placeholder="Tue 15 Sept" >
+                        <span>&nbsp—&nbsp</span>
+                        <input class="col-sm-6" type="text" name="data-out" placeholder="Sat 19 Sept" >
+                    </div>
                 </div>
-                <div class="data-block">
-                    <input type="text" name="data-in" placeholder="Tue 15 Sept" >
-                    <span>&nbsp—&nbsp</span>
-                    <input type="text" name="data-out" placeholder="Sat 19 Sept" >
+                <div class="filter-block col-sm-12">
+                    <div class="filter-label">
+                        <label>2 Adults — 0 Children — 1 Room</label>
+                    </div>
+                    <div class="filter-input">
+                        <input type="text" name="filter-abults" placeholder="2 Adults">
+                        <span>&nbsp—&nbsp</span>
+                        <input type="text" name="filter-children" class="filter-children" placeholder="0 Children">
+                        <span>&nbsp—&nbsp</span>
+                        <input type="text" name="filter-room" placeholder="1 Room">
+                    </div>
                 </div>
-            </div>
-            <div class="filter-block">
-                <div class="filter-label">
-                    <label>2 Adults — 0 Children — 1 Room</label>
+                <div class="filter-input-2 col-sm-12">
+                    <div class="col-sm-6">
+                        <span>Adults<p>2</p></span>
+                    </div>
+                    <hr>
+                    <div class="col-sm-6">
+                        <span>Children<p>0</p></span>
+                    </div>
+                    <hr>
+                    <div class="col-sm-6">
+                        <span>Rooms<p>1</p></span>
+                    </div>
                 </div>
-                <div class="filter-input">
-                    <input type="text" name="filter-abults" placeholder="2 Adults">
-                    <span>&nbsp—&nbsp</span>
-                    <input type="text" name="filter-children" class="filter-children" placeholder="0 Children">
-                    <span>&nbsp—&nbsp</span>
-                    <input type="text" name="filter-room" placeholder="1 Room">
+                <div class="header-button col-sm-12">
+                    <button class="button-blue ">Search</button>
                 </div>
-            </div>
-            <div class="header-button">
-                <button class="button-blue">Search</button>
-            </div>
-        </form>
+            </form>
+        </div>
         <div class="header-apps col-xl-12">
             <img src="./images/google-play-badge.png" alt="google play badge">
             <img src="./images/App_Store_Badge.png" alt="app store badge">
@@ -172,11 +199,7 @@
                     <img src="images/arrowDown.png" alt="down arrow">
                 </div>
                 </div>
-
         </div>
-
-
-
     </section>
     <section class="sing-up section-content">
         <div class="sing-up-user">
@@ -195,13 +218,14 @@
     </section>
     <section class="guests">
         <div class="section-title col-xl-12 col-sm-12">
+            <h2 class="new-titel">Reviews</h2>
             <h2>Guests reviews</h2>
         </div>
-        <div class="guests-reviews section-content col-xl-12">
+        <div class="section-content guests-reviews col-xl-12">
             <div class="reviews col-xl-4">
                 <div class="reviews-image">
                     <img src="./images/BaliIndonesia.jpg" alt="Bali Indonesia">
-                    <div class="reviews-price"><p>From 250 USD</p></div>
+                    <div class="reviews-price foto-off"><p>From 250 USD</p></div>
                 </div>
                 <div class="reviews-content">
                     <div class="reviews-hotel">
@@ -230,10 +254,12 @@
                             and advice.
                         </p>
                     </div>
+                    <div class="reviews-navigation">
+                        <img src="./images/navigation.svg" alt="rewiews navigation">
+                    </div>
                 </div>
             </div>
-
-            <div class="reviews col-xl-4">
+            <div class="reviews col-xl-4 foto-off">
                 <div class="reviews-image">
                     <img src="./images/RotterdamNetherlands.jpg" alt="Rotterdam, Netherlands">
                     <div class="reviews-price"><p>From 40 USD</p></div>
@@ -265,8 +291,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="reviews col-xl-4">
+            <div class="reviews col-xl-4 foto-off">
                 <div class="reviews-image">
                     <img src="./images/OurikaMarocco.jpg" alt="Ourika Marocco">
                     <div class="reviews-price"><p>From 100 USD</p></div>
@@ -302,7 +327,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </main>
