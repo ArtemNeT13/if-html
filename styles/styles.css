@@ -283,7 +283,6 @@ h2{
 }
 
 section{
-    width: 100%;
     background: #FFFFFF;
 }
 .section-content{
@@ -339,19 +338,24 @@ section{
     justify-content: space-between;
     margin-top: 105px;
     padding-bottom: 120px;
+}
+.hotel-foto{
+    margin: 0 8px;
+}
+.hotel-img{
     position: relative;
+}
+.hotel-img img{
+    width: 100%;
 }
 .arrow-right{
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(50%, -50%);
-    text-align: right;
-    height: 300px;
 }
-.hotel-foto{
-    width: 300px;
-    height: 435px;
+.arrow-right-2{
+    display: none;
 }
 .hotel-foto p{
     padding-top: 24px;
@@ -363,7 +367,6 @@ section{
 .hotel-foto span{
     color: #BFBFBF;
 }
-
 
 .best-destinations{
     display: flex;
@@ -436,7 +439,6 @@ section{
 }
 .arrow-down{
     position: absolute;
-    min-width: 1240px;
     text-align: center;
     bottom: 0;
     margin-bottom: -90px;
@@ -450,7 +452,6 @@ section{
 }
 .sing-up-user{
     padding: 0 24px;
-    width: 700px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -496,15 +497,16 @@ section{
     margin-bottom: 120px;
 }
 .reviews{
-    margin-top: 104px;
+    margin: 104px 8px 0;
 }
 .reviews-image{
     position: relative;
-    width: 400px;
     height: 400px;
 }
-.reviews-price{
+.reviews-image img{
     width: 100%;
+}
+.reviews-price{
     height: 48px;
     font-size: 18px;
     padding: 12px 24px;
@@ -629,7 +631,7 @@ footer p{
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1240px) {
     .col-sm-1  {width: calc(100% / var(--column-count) * 1);}
     .col-sm-2  {width: calc(100% / var(--column-count) * 2);}
     .col-sm-3  {width: calc(100% / var(--column-count) * 3);}
@@ -654,7 +656,6 @@ footer p{
         justify-content: center;
     }
     .header-logo{
-        width: 320px;
         padding: 0;
         margin-bottom: 48px;
     }
@@ -849,17 +850,11 @@ footer p{
         padding-bottom: 40px;
     }
     .hotel-foto{
-        width: 156px;
-        height: 209px;
-        margin:0 8px;
-    }
-    .hotel-foto img{
-        width: 156px;
+        margin:0 4px;
     }
     .foto-off{
         display: none;
     }
-
     .hotel-foto p{
         padding-top: 8px;
         font-size: 12px;
@@ -867,15 +862,14 @@ footer p{
     .hotel-foto span{
         font-size: 12px;
     }
-    .arrow-right{
-        top: 50%;
-        right: -16px;
-        transform: translate(50%, -50%);
-        text-align: right;
-        height: 124px;
+    .arrow-right-2{
+        display: unset;
     }
-    .arrow-right img{
-      width: 28px;
+    .arrow-right-2 img{
+        width: 28px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .best-destinations{
@@ -941,11 +935,11 @@ footer p{
         transform: rotate(-90deg);
     }
     .arrow-down{
-        min-width: 320px;
         height: 28px;
         position: absolute;
         top: calc(50% - 14px);
-        transform: translate(50%, -50%);
+        transform: translate(-50%, -50%);
+        right: -30px;
     }
 
     .sing-up{
@@ -989,7 +983,6 @@ footer p{
         font-weight: 500;
     }
     .button-blue{
-        width: auto;
         background-color: unset;
         border: 0px solid #3077C6;
         margin: 16px 0 16px;
@@ -998,7 +991,6 @@ footer p{
     .guests{
         background-color: #EAF0F9;
         order: 3;
-        min-width: 640px;
     }
     .guests h2{
         display: none;
@@ -1019,7 +1011,6 @@ footer p{
     }
     .reviews-image{
         height: 325px;
-        width: auto;
     }
     .reviews-image img{
         height: 325px;
@@ -1062,7 +1053,6 @@ footer p{
 
     .footer{
         padding: 0;
-        max-width: 640px;
     }
     .footer-logo{
         text-align: center;
@@ -1072,7 +1062,6 @@ footer p{
     .footer-content a{
         display: unset;
         text-decoration: underline;
-        width: auto;
         padding: 8px;
         font-size: 15px;
         font-weight: 500;
@@ -1083,15 +1072,10 @@ footer p{
     .footer-content{
         margin-bottom: 32px;
         padding: 0;
-        width: 100%;
         justify-content: center;
-    }
-    .footer-content div{
-        width: auto;
     }
     footer p {
         text-align: center;
-        width: auto;
         font-size: 12px;
         padding-bottom: 40px;
     }
